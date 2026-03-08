@@ -34,7 +34,7 @@ jobs:
         protocol: ftps
         server-dir: /public_html/berdoa/
         local-dir: ./dist/
-        dangerous-clean-remote: true
+        dangerous-clean-slate: true
         exclude: |
           **/.git*
           **/.git*/**
