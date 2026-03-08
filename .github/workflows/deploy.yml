@@ -28,9 +28,9 @@ jobs:
     - name: Deploy to cPanel
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: kliacustoms.net
-        username: ${{ secrets.CPANEL_USERNAME }}
-        password: ${{ secrets.CPANEL_PASSWORD }}
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
         server-dir: /public_html/berdoa/
         local-dir: ./dist/
         exclude: |
