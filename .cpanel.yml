@@ -1,0 +1,11 @@
+---
+deployment:
+  targets:
+    production:
+      type: git
+      url: https://github.com/brisbanefusion/berdoa.git
+      branch: main
+      buildable: true
+      build_command: npm install && npm run build
+      restart_app: true
+      document_root: /dist
